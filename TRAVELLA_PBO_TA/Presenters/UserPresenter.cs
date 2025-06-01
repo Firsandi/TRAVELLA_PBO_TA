@@ -23,5 +23,11 @@ namespace TRAVELLA_PBO_TA.Presenters
             bool isValid = UserModels.ValidateUser(email, password);
             _view.ShowLoginResult(isValid);
         }
+        public void Register(string nama, string email, string nomorTelepon, string username, string password)
+        {
+            bool isRegistered = UserModels.RegisterUser(nama, email, nomorTelepon, username, password);
+            _view.ShowRegisterResult(isRegistered);
+        }
+
     }
 }

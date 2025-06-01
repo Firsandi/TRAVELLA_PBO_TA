@@ -1,6 +1,8 @@
 ﻿using Npgsql;
 using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -52,24 +54,40 @@ namespace TRAVELLA_PBO_TA.Models
 
 
 
-        public static bool RegisterUser(string nama, string email, string password, string role)
+        public static bool RegisterUser(string nama, string email, string nomorTelepon, string username, string password)
+        {
+            using (var conn = KoneksiDatabase.GetKoneksi())
             {
-                using (var conn = KoneksiDatabase.GetKoneksi())
+                if (conn.State != ConnectionState.Open)  // ✅ Cek status koneksi sebelum dibuka
                 {
                     conn.Open();
-                    string query = "INSERT INTO users (nama, email, password, role) VALUES (@nama, @email, @password, @role)";
-                    using (var cmd = new NpgsqlCommand(query, conn))
-                    {
-                        cmd.Parameters.AddWithValue("@nama", nama);
-                        cmd.Parameters.AddWithValue("@email", email);
-                        cmd.Parameters.AddWithValue("@password", BCrypt.Net.BCrypt.HashPassword(password));
-                        cmd.Parameters.AddWithValue("@role", role);
+                }
+                // ✅ Cek apakah username sudah digunakan
+                string checkQuery = "SELECT COUNT(*) FROM users WHERE username = @username";
+                using (var checkCmd = new NpgsqlCommand(checkQuery, conn))
+                {
+                    checkCmd.Parameters.AddWithValue("@username", username);
+                    int count = Convert.ToInt32(checkCmd.ExecuteScalar());
 
-                        return cmd.ExecuteNonQuery() > 0;
+                    if (count > 0)
+                    {
+                        return false; // Username sudah ada
                     }
                 }
+
+                // ✅ Simpan data jika username belum ada
+                string query = "INSERT INTO users (nama, email, no_telepon, username, password) VALUES (@nama, @email, @no_telepon, @username, @password)";
+                using (var cmd = new NpgsqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@nama", nama);
+                    cmd.Parameters.AddWithValue("@email", email);
+                    cmd.Parameters.AddWithValue("@no_telepon", nomorTelepon);
+                    cmd.Parameters.AddWithValue("@username", username);
+                    cmd.Parameters.AddWithValue("@password", password);
+
+                    return cmd.ExecuteNonQuery() > 0;
+                }
             }
-
-
+        }
     }
 }

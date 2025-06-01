@@ -116,6 +116,12 @@
     <Compile Include="Presenters\UserPresenter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\FormRegistrasiUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FormRegistrasiUser.Designer.cs">
+      <DependentUpon>FormRegistrasiUser.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Views\FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -129,6 +135,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Views\FormRegistrasiUser.resx">
+      <DependentUpon>FormRegistrasiUser.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -143,7 +152,9 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\bg biru %282%29.png" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="Resources\BG pemandangan.png" />
   </ItemGroup>
@@ -170,6 +181,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Tombol login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MenuDaftar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Daftar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

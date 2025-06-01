@@ -73,6 +73,16 @@ namespace TRAVELLA_PBO_TA.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bg_biru__2_ {
+            get {
+                object obj = ResourceManager.GetObject("bg biru (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap BG_panjang {
             get {
                 object obj = ResourceManager.GetObject("BG panjang", resourceCulture);
@@ -103,9 +113,39 @@ namespace TRAVELLA_PBO_TA.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Daftar {
+            get {
+                object obj = ResourceManager.GetObject("Daftar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap logo {
+            get {
+                object obj = ResourceManager.GetObject("logo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Menu_login {
             get {
                 object obj = ResourceManager.GetObject("Menu login", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap MenuDaftar {
+            get {
+                object obj = ResourceManager.GetObject("MenuDaftar", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
