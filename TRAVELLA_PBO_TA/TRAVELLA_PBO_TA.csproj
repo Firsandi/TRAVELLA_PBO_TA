@@ -105,13 +105,28 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Interfaces\IAdminView.cs" />
     <Compile Include="Interfaces\IUserView.cs" />
+    <Compile Include="Models\AdminModels.cs" />
     <Compile Include="Models\UserModels.cs" />
-    <Compile Include="Views\FormLogin.cs">
+    <Compile Include="Presenters\AdminPresenter.cs" />
+    <Compile Include="Views\FormHalamanAwal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\FormLogin.Designer.cs">
-      <DependentUpon>FormLogin.cs</DependentUpon>
+    <Compile Include="Views\FormHalamanAwal.Designer.cs">
+      <DependentUpon>FormHalamanAwal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FormLoginAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FormLoginAdmin.Designer.cs">
+      <DependentUpon>FormLoginAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FormLoginUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FormLoginUser.Designer.cs">
+      <DependentUpon>FormLoginUser.cs</DependentUpon>
     </Compile>
     <Compile Include="Presenters\UserPresenter.cs" />
     <Compile Include="Program.cs" />
@@ -122,8 +137,14 @@
     <Compile Include="Views\FormRegistrasiUser.Designer.cs">
       <DependentUpon>FormRegistrasiUser.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Views\FormLogin.resx">
-      <DependentUpon>FormLogin.cs</DependentUpon>
+    <EmbeddedResource Include="Views\FormHalamanAwal.resx">
+      <DependentUpon>FormHalamanAwal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FormLoginAdmin.resx">
+      <DependentUpon>FormLoginAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FormLoginUser.resx">
+      <DependentUpon>FormLoginUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -190,6 +211,39 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Selamat Datang!.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tidak punya akun_ Daftar disini.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Form.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Form1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Halo Admin!.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Halaaman awal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Travella logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Login Admin Halaman awal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Login Admin Halaman awal1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Login admin halamman awal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mulai Perjalanan.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

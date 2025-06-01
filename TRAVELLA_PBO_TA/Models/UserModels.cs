@@ -35,7 +35,7 @@ namespace TRAVELLA_PBO_TA.Models
                 {
                     conn.Open();
                 }
-                string query = "SELECT password FROM admins WHERE username = @username";
+                string query = "SELECT password FROM users WHERE username = @username";
                 using (var cmd = new NpgsqlCommand(query, conn))
                 {
                     cmd.Parameters.AddWithValue("@username", username);
