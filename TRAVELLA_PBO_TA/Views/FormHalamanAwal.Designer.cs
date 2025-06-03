@@ -43,9 +43,10 @@
             this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox4.Image = global::TRAVELLA_PBO_TA.Properties.Resources.Mulai_Perjalanan;
-            this.pictureBox4.Location = new System.Drawing.Point(114, 597);
+            this.pictureBox4.Location = new System.Drawing.Point(86, 485);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(285, 73);
+            this.pictureBox4.Size = new System.Drawing.Size(214, 59);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 3;
             this.pictureBox4.TabStop = false;
@@ -53,10 +54,13 @@
             // 
             // pictureBox3
             // 
+            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox3.Image = global::TRAVELLA_PBO_TA.Properties.Resources.Login_admin_halamman_awal;
-            this.pictureBox3.Location = new System.Drawing.Point(33, 12);
+            this.pictureBox3.Location = new System.Drawing.Point(25, 11);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(285, 73);
+            this.pictureBox3.Size = new System.Drawing.Size(177, 58);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 2;
             this.pictureBox3.TabStop = false;
@@ -65,9 +69,10 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::TRAVELLA_PBO_TA.Properties.Resources.Travella_logo;
-            this.pictureBox2.Location = new System.Drawing.Point(1018, 12);
+            this.pictureBox2.Location = new System.Drawing.Point(764, 10);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(285, 73);
+            this.pictureBox2.Size = new System.Drawing.Size(214, 59);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
@@ -75,22 +80,25 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::TRAVELLA_PBO_TA.Properties.Resources.Halaaman_awal;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 95);
+            this.pictureBox1.Location = new System.Drawing.Point(0, 77);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1350, 597);
+            this.pictureBox1.Size = new System.Drawing.Size(1012, 485);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
             // FormHalamanAwal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1348, 721);
+            this.ClientSize = new System.Drawing.Size(1011, 586);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
+            this.ForeColor = System.Drawing.Color.Transparent;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormHalamanAwal";
             this.Text = "FormHalamanAwal";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();

@@ -1,6 +1,6 @@
-﻿namespace TRAVELLA_PBO_TA
+﻿namespace TRAVELLA_PBO_TA.Views
 {
-    partial class Form1
+    partial class DashboardAdmin
     {
         /// <summary>
         /// Required designer variable.
@@ -28,13 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // DashboardAdmin
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(1024, 521);
+            this.Name = "DashboardAdmin";
+            this.Text = "DashboardAdmin";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
     }
 }
-
