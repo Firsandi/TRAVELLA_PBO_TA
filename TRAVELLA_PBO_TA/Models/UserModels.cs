@@ -52,8 +52,6 @@ namespace TRAVELLA_PBO_TA.Models
             return false;
         }
 
-
-
         public static bool RegisterUser(string nama, string email, string nomorTelepon, string username, string password)
         {
             using (var conn = KoneksiDatabase.GetKoneksi())

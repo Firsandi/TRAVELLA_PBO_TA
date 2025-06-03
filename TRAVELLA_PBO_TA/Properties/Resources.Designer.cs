@@ -113,6 +113,26 @@ namespace TRAVELLA_PBO_TA.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap button_beranda {
+            get {
+                object obj = ResourceManager.GetObject("button beranda", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap button_kembali {
+            get {
+                object obj = ResourceManager.GetObject("button kembali", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Daftar {
             get {
                 object obj = ResourceManager.GetObject("Daftar", resourceCulture);
@@ -163,6 +183,16 @@ namespace TRAVELLA_PBO_TA.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap header {
+            get {
+                object obj = ResourceManager.GetObject("header", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Login_Admin_Halaman_awal {
             get {
                 object obj = ResourceManager.GetObject("Login Admin Halaman awal", resourceCulture);
@@ -203,6 +233,16 @@ namespace TRAVELLA_PBO_TA.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap logo_beranda {
+            get {
+                object obj = ResourceManager.GetObject("logo beranda", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Menu_login {
             get {
                 object obj = ResourceManager.GetObject("Menu login", resourceCulture);
@@ -226,6 +266,26 @@ namespace TRAVELLA_PBO_TA.Properties {
         internal static System.Drawing.Bitmap Mulai_Perjalanan {
             get {
                 object obj = ResourceManager.GetObject("Mulai Perjalanan", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Review {
+            get {
+                object obj = ResourceManager.GetObject("Review", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap samping {
+            get {
+                object obj = ResourceManager.GetObject("samping", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
