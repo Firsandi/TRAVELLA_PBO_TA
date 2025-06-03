@@ -99,17 +99,29 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Database\KoneksiDatabase.cs" />
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
     <Compile Include="Interfaces\IAdminView.cs" />
     <Compile Include="Interfaces\IUserView.cs" />
     <Compile Include="Models\AdminModels.cs" />
     <Compile Include="Models\UserModels.cs" />
     <Compile Include="Presenters\AdminPresenter.cs" />
+    <Compile Include="Views\BookingAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\BookingAdmin.Designer.cs">
+      <DependentUpon>BookingAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DashboardAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\DashboardAdmin.Designer.cs">
+      <DependentUpon>DashboardAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DashboardUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\DashboardUser.Designer.cs">
+      <DependentUpon>DashboardUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\FormHalamanAwal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -137,6 +149,57 @@
     <Compile Include="Views\FormRegistrasiUser.Designer.cs">
       <DependentUpon>FormRegistrasiUser.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\GuideAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\GuideAdmin.Designer.cs">
+      <DependentUpon>GuideAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PaketTripAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\PaketTripAdmin.Designer.cs">
+      <DependentUpon>PaketTripAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PesanTripUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\PesanTripUser.Designer.cs">
+      <DependentUpon>PesanTripUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ReviewAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\ReviewAdmin.Designer.cs">
+      <DependentUpon>ReviewAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ReviewUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\ReviewUser.Designer.cs">
+      <DependentUpon>ReviewUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\RiwayatPemesananUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\RiwayatPemesananUser.Designer.cs">
+      <DependentUpon>RiwayatPemesananUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\TransaksiAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\TransaksiAdmin.Designer.cs">
+      <DependentUpon>TransaksiAdmin.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Views\BookingAdmin.resx">
+      <DependentUpon>BookingAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\DashboardAdmin.resx">
+      <DependentUpon>DashboardAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\DashboardUser.resx">
+      <DependentUpon>DashboardUser.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\FormHalamanAwal.resx">
       <DependentUpon>FormHalamanAwal.cs</DependentUpon>
     </EmbeddedResource>
@@ -158,6 +221,27 @@
     </Compile>
     <EmbeddedResource Include="Views\FormRegistrasiUser.resx">
       <DependentUpon>FormRegistrasiUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\GuideAdmin.resx">
+      <DependentUpon>GuideAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\PaketTripAdmin.resx">
+      <DependentUpon>PaketTripAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\PesanTripUser.resx">
+      <DependentUpon>PesanTripUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ReviewAdmin.resx">
+      <DependentUpon>ReviewAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ReviewUser.resx">
+      <DependentUpon>ReviewUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\RiwayatPemesananUser.resx">
+      <DependentUpon>RiwayatPemesananUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\TransaksiAdmin.resx">
+      <DependentUpon>TransaksiAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -244,6 +328,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Mulai Perjalanan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Review.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\header.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\samping.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button beranda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo beranda.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

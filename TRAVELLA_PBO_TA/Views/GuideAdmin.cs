@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace TRAVELLA_PBO_TA
+namespace TRAVELLA_PBO_TA.Views
 {
-    public partial class Form1 : Form
+    public partial class GuideAdmin : Form
     {
-        public Form1()
+        public GuideAdmin()
         {
             InitializeComponent();
         }
